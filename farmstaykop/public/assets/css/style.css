@@ -74,7 +74,7 @@
 
 /*** Navbar ***/
 .nav-bar {
-    position: relative;
+    position: fixed;
     margin-top: 45px;
     padding: 0 3rem;
     transition: .5s;
@@ -517,7 +517,7 @@ footer p a:hover {
   }
   .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #3F704D;
   }
   .btn_get:hover {
     color: #fff;
@@ -534,7 +534,7 @@ footer p a:hover {
   
   
   .new_footer_top .f_widget.about-widget .f_list li a:hover {
-    color: #5e2ced;
+    color: #3F704D;
   }
   .new_footer_top .f_widget.about-widget .f_list li {
     margin-bottom: 11px;
@@ -586,19 +586,19 @@ footer p a:hover {
   .btn_get_two {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #3F704D;
+    border-color: #3F704D;
     color: #fff;
   }
   
   .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #3F704D;
   }
   
   .new_footer_top .f_social_icon a:hover {
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #3F704D;
+    border-color: #3F704D;
   color:white;
   }
   .new_footer_top .f_social_icon a + a {
@@ -615,7 +615,7 @@ footer p a:hover {
     font-size: 18px;
   }
   h1, h2, h3, h4, h5, h6 {
-    color: #4b505e;
+    color: #000;
   }
   .new_footer_top .f_widget.about-widget .f_list li a {
     color: #6a7695;
@@ -697,3 +697,188 @@ footer p a:hover {
     background-color: #3F704D;
   }
   
+/* ---------------------hero------ */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/property-1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+
+
+
+/* --------------------slider--------------- */
+
+body{
+  
+  color:#000;
+}
+#landing{
+  height:100vh;
+  background:url(https://images.unsplash.com/photo-1450380412196-4e27fb7d2270?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375) no-repeat center center fixed;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -moz-background-size:cover;
+}
+#portfolio{
+  background:url(https://images.unsplash.com/photo-1449709992276-24bbca940809?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c5de67a556b843958d279d2b74a09550) no-repeat center center fixed;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -moz-background-size:cover;
+  min-height:100vh;
+  position: relative;
+}
+/* end landing page */
+
+
+/* cool name effect */
+a:hover,a:focus{text-decoration:none;}
+.svg-wrapper {
+  position: relative;
+  top: 63%;
+  transform: translateY(-50%);
+	margin: 0 auto;
+  width: 320px;
+  max-height:60px;
+  cursor:default;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+
+  stroke: #19f6e8;  
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: serif;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #000;
+  top: -48px;
+  position: relative;
+  text-align:center;
+  /* z-index: 99; */
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+/* end cool name effect */
+#port-wrapper{
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.3);
+  position:absolute;
+}
+.text-2 h2{
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+}
+button{
+  background:none;
+  border:none;
+  padding:0 20px;
+}
+button:hover, button:focus{
+  background:rgba(0,0,0,0.4);
+  outline:none;
+}
+.content{
+  margin:50px;
+  margin-top:75px;
+  margin-bottom:0;
+}
+@media only screen and (max-width : 768px){
+  #text-changer-1{
+    margin-left:50px;
+  }
+}
+#text-changer-1{
+  max-width:750px;  
+  margin-left:75px;
+}
+#text-changer-1 img{
+  margin:-10px 10px 5px 0;
+  border-radius:50px;
+}
+#text-changer-3 .social{
+  margin:35px;
+}
+#text-changer-3 .fa{
+  margin:5px;
+  color:#fff;
+}
+#text-changer-3 .fa:hover{
+  color:#2e8ece;
+}
+.project{
+  height:100%; width:100%;
+  border:1px solid #fff;
+  margin-bottom:5px;
+}
+#text-changer-2{
+  text-align:center;
+  height:100%;
+}
