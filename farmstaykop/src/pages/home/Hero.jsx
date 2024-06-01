@@ -73,7 +73,7 @@ const Hero = () => {
             </div> */}
 
             {/* <!-- Search Start --> */}
-            <div id='search' className="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style={{ "padding": "35px" }}>
+            <div id='search' className="container-fluid  mb-5 wow fadeIn" data-wow-delay="0.1s" style={{ "padding": "35px" }}>
                 <div className="container" >
                     <div className="row g-2">
                         <div className="col-md-10">
@@ -185,7 +185,7 @@ const Hero = () => {
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src="/assets/img/property-4.jpg" alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                                <div className=" rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
                                                 <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Building</div>
                                             </div>
                                             <div className="p-4 pb-0">
@@ -204,7 +204,7 @@ const Hero = () => {
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src="/assets/img/property-5.jpg" alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                                <div className=" rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
                                                 <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
                                             </div>
                                             <div className="p-4 pb-0">
@@ -223,7 +223,7 @@ const Hero = () => {
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src="/assets/img/property-6.jpg" alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                                <div className=" rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
                                                 <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
                                             </div>
                                             <div className="p-4 pb-0">

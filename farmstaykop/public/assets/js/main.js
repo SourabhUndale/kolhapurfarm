@@ -99,3 +99,58 @@ $(document).ready(function(){
   $("#first").click();
   
 });
+
+
+
+//---------------------------------js --------------------------
+
+
+const carousel = document.getElementById('carouselExampleInterval');
+const carouselItems = carousel.getElementsByClassName('carousel-item');
+
+// Set the first item as active
+carouselItems[0].classList.add('active');
+
+let currentIndex = 0;
+
+function slideNext() {
+  carouselItems[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  carouselItems[currentIndex].classList.add('active');
+}
+
+setInterval(slideNext, 1000);
+
+
+
+$('#recipeCarousel').carousel({
+    interval: 1000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+
+
+
+
+
+
+
+
+
+
