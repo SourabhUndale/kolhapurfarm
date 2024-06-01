@@ -99,6 +99,7 @@ const Propertyhero = () => {
                 </div>
                 <div className="col-md-2">
                     <button className="btn btn-dark border-0 w-100 py-3">Search</button>
+                    <button className="btn btn-dark border-0 w-100 py-3">Search</button>
                 </div>
             </div>
         </div>
