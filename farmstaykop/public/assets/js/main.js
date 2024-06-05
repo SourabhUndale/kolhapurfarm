@@ -105,52 +105,77 @@ $(document).ready(function(){
 //---------------------------------js --------------------------
 
 
-const carousel = document.getElementById('carouselExampleInterval');
-const carouselItems = carousel.getElementsByClassName('carousel-item');
+// const carousel = document.getElementById('carouselExampleInterval');
+// const carouselItems = carousel.getElementsByClassName('carousel-item');
 
-// Set the first item as active
-carouselItems[0].classList.add('active');
+// // Set the first item as active
+// carouselItems[0].classList.add('active');
 
-let currentIndex = 0;
+// let currentIndex = 0;
 
-function slideNext() {
-  carouselItems[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + 1) % carouselItems.length;
-  carouselItems[currentIndex].classList.add('active');
-}
+// function slideNext() {
+//   carouselItems[currentIndex].classList.remove('active');
+//   currentIndex = (currentIndex + 1) % carouselItems.length;
+//   carouselItems[currentIndex].classList.add('active');
+// }
 
-setInterval(slideNext, 1000);
+// setInterval(slideNext, 1000);
 
 
 
-$('#recipeCarousel').carousel({
-    interval: 1000
-  })
+// $('#recipeCarousel').carousel({
+//     interval: 1000
+//   })
   
-  $('.carousel .carousel-item').each(function(){
-      var minPerSlide = 3;
-      var next = $(this).next();
-      if (!next.length) {
-      next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
+//   $('.carousel .carousel-item').each(function(){
+//       var minPerSlide = 3;
+//       var next = $(this).next();
+//       if (!next.length) {
+//       next = $(this).siblings(':first');
+//       }
+//       next.children(':first-child').clone().appendTo($(this));
       
-      for (var i=0;i<minPerSlide;i++) {
-          next=next.next();
-          if (!next.length) {
-              next = $(this).siblings(':first');
-            }
+//       for (var i=0;i<minPerSlide;i++) {
+//           next=next.next();
+//           if (!next.length) {
+//               next = $(this).siblings(':first');
+//             }
           
-          next.children(':first-child').clone().appendTo($(this));
-        }
+//           next.children(':first-child').clone().appendTo($(this));
+//         }
+//   });
+
+
+
+
+// Property Detail Page
+const propertyDetail = document.querySelector('.property-detail');
+
+// Fetch property data from an API or database
+fetch('/api/properties/1')
+  .then(response => response.json())
+  .then(data => {
+    // Populate the property detail section
+    propertyDetail.innerHTML = `
+      <div class="property-image">
+        <img src="${data.imageUrl}" alt="${data.title}">
+      </div>
+      <div class="property-info">
+        <h2>${data.title}</h2>
+        <p>${data.description}</p>
+        <p>Price: $${data.price.toLocaleString()}</p>
+        <p>Location: ${data.address}, ${data.city}, ${data.state} ${data.zip}</p>
+      </div>
+      <div class="agent-info">
+        <h3>Listing Agent</h3>
+        <p>${data.agent.name}</p>
+        <p><a href="mailto:${data.agent.email}">${data.agent.email}</a></p>
+        <p>${data.agent.phone}</p>
+      </div>
+    `;
+  })
+  .catch(error => {
+    console.error('Error fetching property data:', error);
   });
-
-
-
-
-
-
-
-
 
 
