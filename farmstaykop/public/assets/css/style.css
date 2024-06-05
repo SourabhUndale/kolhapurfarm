@@ -888,3 +888,319 @@ button:hover, button:focus{
 
 /* ----------------------card---------------------- */
 
+.carousel {
+  position: relative;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+#carousel-thumbs {
+  background: rgba(255,255,255,.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+.container {
+  margin-top: 20px;
+}
+.property-details {
+  margin-top: 20px;
+}
+.property-details h2 {
+  color: #333;
+}
+.property-details p {
+  line-height: 1.6em;
+}
+.property-details .price {
+  color: #77b300;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.advertisement {
+  background: #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+.contact {
+  background: #77b300;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+/* ------------------------------Property card css----------------------------------- */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-8 {
+  flex-basis: 75%;
+}
+
+#propertyCarousel {
+  margin-bottom: 20px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon::before {
+  content: "\e002";
+  font-family: "Font Awesome 5 Free";
+}
+
+.carousel-control-next-icon::before {
+  content: "\e003";
+  font-family: "Font Awesome 5 Free";
+}
+
+.property-details {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.property-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.property-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact {
+  font-size: 16px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+.col-md-4 {
+  flex-basis: 25%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+.advertisement {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.advertisement p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+/* 
+---------------------------------------------------------------------------property card */
+/* Property Detail Page */
+.property-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.property-image {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.property-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.property-info {
+  flex: 0 0 calc(66.666667% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.property-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.property-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.agent-info {
+  flex: 0 0 calc(33.333333% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agent-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.agent-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.agent-info a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.agent-info a:hover {
+  color: #23527c;
+}

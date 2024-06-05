@@ -39,7 +39,7 @@ const Hero = () => {
                             {/* <h2>F.hsdhs</h2> */}
                             {/* <div className="text">F. Agnoletto</div> */}
                         </svg></a>
-                        <h2 className='text'>Kolhapur</h2>
+                    <h2 className='text'>Kolhapur</h2>
                 </div>
             </div>
             {/* <div id="portfolio">
@@ -116,71 +116,94 @@ const Hero = () => {
                     </div>
                 </section>
 
-                <section>
-                    <div className="parallax-three">
-                        {/* <h2>ENCHANTED FOREST</h2> */}
 
-                        <div className="container row g-4" style={{ "zIndex": "999", }}>
-                            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                                <a className="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div className="rounded p-4">
-                                        <div className="icon mb-3">
-                                            <img className="img-fluid" src="/assets/img/icon-luxury.png" alt="Icon" />
-                                        </div>
-                                        <h6>Garage</h6>
-                                        <span>123 Properties</span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="propertyCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/assets/img/property-1.jpg" class="d-block w-100" alt="Property Image 1" />
                                     </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/img/property-1.jpg" class="d-block w-100" alt="Property Image 2" />
+                                    </div>
+
+                                </div>
+                                <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#propertyCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
                                 </a>
                             </div>
-                            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <a className="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div className="rounded p-4">
-                                        <div className="icon mb-3">
-                                            <img className="img-fluid" src="/assets/img/icon-villa.png" alt="Icon" />
-                                        </div>
-                                        <h6>Apartment</h6>
-                                        <span>123 Properties</span>
+
+                            <div class="additional-images mt-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/property-1.jpg" alt="Property Image 3" />
                                     </div>
-                                </a>
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/property-1.jpg" alt="Property Image 4" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/property-1.jpg" alt="Property Image 5" />
+                                    </div>
+
+                                </div>
                             </div>
-                            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <a className="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div className="rounded p-4">
-                                        <div className="icon mb-3">
-                                            <img className="img-fluid" src="/assets/img/icon-villa.png" alt="Icon" />
-                                        </div>
-                                        <h6>Villa</h6>
-                                        <span>123 Properties</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                                <a className="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div className="rounded p-4">
-                                        <div className="icon mb-3">
-                                            <img className="img-fluid" src="/assets/img/icon-house.png" alt="Icon" />
-                                        </div>
-                                        <h6>Home</h6>
-                                        <span>123 Properties</span>
-                                    </div>
-                                </a>
+
+                            <div class="property-details mt-3">
+                                <h2>Beautiful Family House</h2>
+                                <p>Located in a serene environment, this beautiful family house offers a perfect blend of comfort and luxury. It features 4 bedrooms, 3 bathrooms, a spacious living room, and a modern kitchen.</p>
+                                <p>With a large backyard, a two-car garage, and proximity to schools and shopping centers, this house is perfect for families looking for a new home.</p>
+                                <p class="price">$350,000</p>
+                                <a href="mailto:info@realestate.com" class="contact">Contact Us for More Info</a>
                             </div>
                         </div>
 
-                    </div>
-                </section>
+                        <div class="col-md-4">
+                            <h3>Request More Information</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
 
+                            <div class="advertisement mt-3">
+                                <h4>Advertisement</h4>
+                                <p>This is an advertisement space. You can add any content or advertisement here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
                 <div className="container-xxl py-5">
                     <div className="container">
-                        
+
                         <div className="tab-content">
                             <div id="tab-1" className="tab-pane fade show p-0 active">
                                 <div className="row g-4">
-                                    
-                                    
+
+
                                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
@@ -243,8 +266,9 @@ const Hero = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                            
+
+
+
                         </div>
                     </div>
                 </div>
